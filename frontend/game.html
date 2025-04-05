@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set up a Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="players-info">
+                <div class="players">
+                    <span>Players <span class="player-count">1</span></span>
+                </div>
+                <button class="rules-btn">Rules</button>
+                <button class="user-btn"></button>
+            </div>
+        </header>
+        <main>
+            <div class="left-section">
+                <div class="team-box">
+                    <div class="team-header">Operative(s)</div>
+                    <div class="team-players">-</div>
+                    <button class="join-btn">Join as Operative</button>
+                    <button class="join-btn">Join as Spymaster</button>
+                </div>
+            </div>
+            <div class="center-section">
+                <h1>Set up a game</h1>
+                <div class="game-setup">
+                    <h2>Select the game variant:</h2>
+                    <div class="game-variants">
+                        <div class="game-option">
+                            <p> Team VS Team<br>4+ players</p>
+                        </div>
+                        <div class="game-option">
+                             <p>Cooperative<br>2+ players</p>
+                        </div>
+                    </div>
+                    <h2>Select language of words:</h2>
+                    <select id="mySelect" name="selection" required title="Select an option" aria-label="Select an option">
+                        <option valeur ="fr"> Francais</option>
+                        <option valeur="en">Anglais</option>
+                        <option valeur="es">Espagnol</option>
+                        <option valeur="de">Allemand</option>
+                        <option valeur ="nl">neerlandais</option>
+                    </select>    
+                    <h2>Select which word packs to use:</h2>
+                    <form>
+                        <div class="word-pack">
+                            <input type="checkbox" id="codenames" name="word-pack" checked>
+                            <label for="codenames">Codenames</label>
+                        </div>
+                        <div class="word-pack">
+                            <input type="checkbox" id="codenames-duet" name="word-pack">
+                            <label for="codenames-duet">Codenames: Duet</label>
+                        </div>
+                        <div class="word-pack">
+                            <input type="checkbox" id="custom-pack" name="word-pack">
+                            <label for="custom-pack">Create your own custom word pack!</label>
+                        </div>
+                        <div class="word-pack">
+                            <input type="checkbox" id="halloween-pack" name="word-pack">
+                            <label for="halloween-pack">Bonus Pack: Halloween (words: 20)</label>
+                        </div>
+                        <div class="word-pack">
+                            <input type="checkbox" id="holidays-pack" name="word-pack">
+                            <label for="holidays-pack">Bonus Pack: Holidays (words: 20)</label>
+                        </div>
+                        <div class="word-pack">
+                            <input type="checkbox" id="boardgames-pack" name="word-pack">
+                            <label for="boardgames-pack">Bonus Pack: Boardgames (words: 40)</label>
+                        </div>
+                    </form>
+                    <div class="buttons">
+                        <button class="action-btn">Reset Teams</button>
+                    </div>
+                    <button class="start-btn">Start New Game</button>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="team-box">
+                    <div class="team-header">Operative(s)</div>
+                    <div class="team-players">-</div>
+                  
+                </div>
+    
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
+
+    </div>
+</body>
+</html>

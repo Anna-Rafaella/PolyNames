@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codenames Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #006d7c;
+            margin: 0;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: #004c5a;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .tile, .extra-tile {
+            width: 200px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            font-size: 14px;
+            text-align: center;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        .tile:hover, .extra-tile:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="extra-tile"></div> 
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="extra-tile"></div> 
+    </div>
+    <script src="board.js"></script>
+    <script src="server.js"></script>
+    <script src="main.js"></script>
+    <div>
+        <button>
+        <label for="tile">give a clue:</label>  
+        <input type="text" id="tile" name="clue" required>
+       </button>
+    </div>   
+</body>
+</html>

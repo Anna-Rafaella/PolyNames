@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil de Codenames</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Bienvenue sur Codenames!</h1>
+        <div>
+            <button id="joinRoomBtn" onclick="window.location.href='/join_room.html'">Rejoindre une salle</button>
+            <button id="createRoomBtn" onclick="window.location.href='/create_room.html'">Créer une salle</button>
+        </div>
+        <div id="error-message"></div>
+        <div id="rules">
+            <h2>Comment jouer:</h2>
+            <ol>
+                <li>Cliquez sur le bouton CRÉER UNE SALLE.</li>
+                <li>Sélectionnez les paramètres de jeu préférés et commencez le jeu.</li>
+                <li>Connectez-vous avec vos amis en utilisant votre chat audio ou vidéo préféré.</li>
+                <li>Partagez l'URL de la salle avec vos amis.</li>
+                <li>Profitez du jeu!</li>
+            </ol>
+        </div>
+    </div>
+    <script src="/server.js"></script>
+    <script src="/main.js"></script>
+    <script src="/board.js"></script>
+</body>
+</html>

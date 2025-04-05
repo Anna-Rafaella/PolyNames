@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une Salle - Codenames</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Créer une Salle</h1>
+        <form id="createRoomForm">
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" name="username" required>
+            <select id="mySelect" name="selection" required title="Select an option" aria-label="Select an option">
+                <option>choisir un role</option>
+                <option id="gm">Game Master</option>
+                <option id="im">Intuition Master</option>
+                <option id="random">Random</option>
+            </select>
+            <button id="createTheRoomBtn" onclick="window.location.href='/board.html'">Créer la salle</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+   
+    <script src="/server.js" type="module"></script>
+    <script src="create_room.js" type="module"></script>
+    <script src="board.js" type="module"></script>
+</body>
+</html>
